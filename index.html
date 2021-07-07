@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ticket System</title>
+        <script src="myscript.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="center" id="frontpage" style="display:block">
+            <div>
+                <input id="settingson" onclick="openSettings()" type="image"
+                        src="http://simpleicon.com/wp-content/uploads/setting2.png" />
+                <p class="textheader">Choose the teacher you<br> want to give feedback.</p>
+                <select name="plan" id="plan">
+                    <option value="none" selected>Select a Teacher</option>
+                    <option value="teachera">Teacher A</option>
+                    <option value="teacherb">Teacher B</option>
+                    <option value="teacherc">Teacher C</option>
+                    <option value="teacherd">Teacher D</option>
+                </select>
+            </div>
+            <div>
+                <textarea id="inputarea" placeholder="Teacher Feedback" rows="20" cols="25"></textarea>
+            </div>
+            <div>
+                <p class="textbody">This text is intended to be<br> constructive feedback</p>
+                <button onclick="sendFunction()" id="sendbutton">Send</button>
+            </div>
+        </div>
+        <div class="center" id="settingspage" style="display:none">
+            <div>
+                <input id="settingsoff" onclick="closeSettings()" type="image"
+                       src="http://simpleicon.com/wp-content/uploads/setting2.png" />
+                <div>
+                    <button onclick="document.body.style.backgroundColor = 'MediumSeaGreen';">Green</button>
+                </div>
+                <div>
+                    <button onclick="document.body.style.backgroundColor = 'DodgerBlue';">Blue</button>
+                </div>
+                <div>
+                    <button onclick="document.body.style.backgroundColor = 'Tomato';">Red</button>
+                </div>
+                <div>
+                    <button onclick="document.body.style.backgroundColor = 'Violet';">Violet</button>
+                </div>
+                <div>
+                    <button onclick="document.body.style.backgroundColor = 'Gray';">Gray</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
